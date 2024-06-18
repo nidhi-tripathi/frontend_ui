@@ -1,0 +1,259 @@
+
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 30%;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    background-color: #f7f7f7;
+  }
+  
+  /* Contact List Styles */
+  .contact-list {
+    padding: 10px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .contact-item.unread {
+    background-color: #e0f7fa;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .unread-count {
+    background-color: rgb(25, 158, 38);
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+  
+  .options-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Conversation Styles */
+  .chat-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .conversation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+  }
+  
+  .conversation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture-large {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .header-right {
+    display: flex;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .conversation-content {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  
+  .message {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+  
+    /* margin-left: auto; */
+    word-wrap: break-word;
+    margin-bottom: 10px;
+  }
+  .my-message {
+    align-self: flex-end;
+    background-color: #dcf8c6; 
+    padding: 10px;
+    width: max-content;
+    border-radius: 25px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: auto;
+  }
+
+  .my-timestamp {
+    /* align-self: flex-end; */
+    /* background-color: #dcf8c6;  */
+    font-size: 12px;
+    color: #888;
+    /* padding: 12px; */
+    width: max-content;
+    /* border-radius: 30px; */
+    position: relative;
+    margin-right: 10px;
+    margin-left: auto;
+  }
+
+  .user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6; 
+    padding: 10px;
+    width: max-content;
+    border-radius: 25px;
+    position: relative;
+    margin-right: 10px;
+    
+    /* margin-left: auto; */
+  }
+  
+  
+  /* .profile-picture-small {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  } */
+  
+
+  .contact-message {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: auto;
+  }
+  
+  .message-content {
+    font-size: 15px;
+  }
+ 
+  
+  .timestamp {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+    align-self: flex-end;
+  }
+
+  .message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 300px;
+    
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .message-input button {
+    background-color: #128c7e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  
+  /* Modal Styles */
+
+  .modal {
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 150px;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-option {
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    border: none; 
+    background: none;
+  }
+
+ .modal-content button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
